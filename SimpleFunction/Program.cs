@@ -13,6 +13,7 @@ namespace SimpleFunction
             foreach (var image in MnistReader.ReadTrainingData())
             {
                 // This is a source link test
+                // Second test
 
                 var inputs = GetInputs(image);
 
