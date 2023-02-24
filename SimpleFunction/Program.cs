@@ -15,6 +15,7 @@ namespace SimpleFunction
                 // This is a source link test
                 // Second test
                 // Third test
+                // Fourth test
 
                 var inputs = GetInputs(image);
 
