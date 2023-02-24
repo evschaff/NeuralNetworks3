@@ -12,6 +12,8 @@ namespace SimpleFunction
             var network = new NeuralNetwork(new int[] { 784, 1 }, new ActivationFunctions[] { ActivationFunctions.Tanh, });
             foreach (var image in MnistReader.ReadTrainingData())
             {
+                // This is a source link test
+
                 var inputs = GetInputs(image);
 
                 var expected = new float[1];
