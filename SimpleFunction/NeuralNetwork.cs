@@ -174,7 +174,6 @@ namespace SimpleFunction
                 biases[layers.Length - 2][i] -= gamma[layers.Length - 1][i] * learningRate;
                 for (int j = 0; j < layers[layers.Length-2]; j++)
                 {
-
                     weights[layers.Length - 2][i][j] -= gamma[layers.Length - 1][i] * neurons[layers.Length - 2][j] * learningRate;//*learning 
                 }
             }

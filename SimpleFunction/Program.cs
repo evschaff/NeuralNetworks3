@@ -9,14 +9,9 @@ namespace SimpleFunction
         {
             Console.WriteLine($"Training");
 
-            var network = new NeuralNetwork(new int[] { 784, 1 }, new ActivationFunctions[] { ActivationFunctions.Tanh, });
+            var network = new NeuralNetwork(new int[] { 784, 10, 1 }, new ActivationFunctions[] { ActivationFunctions.Tanh, ActivationFunctions.Tanh });
             foreach (var image in MnistReader.ReadTrainingData())
             {
-                // This is a source link test
-                // Second test
-                // Third test
-                // Fourth test
-
                 var inputs = GetInputs(image);
 
                 var expected = new float[1];
